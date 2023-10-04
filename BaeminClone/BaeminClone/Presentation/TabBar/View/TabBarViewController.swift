@@ -35,9 +35,9 @@ class TabbarViewController: UITabBarController {
         firstNavigationController.navigationBar.prefersLargeTitles = false
         // TabBarItem 설정
         firstTabController.tabBarItem = UITabBarItem(
-            title: "홈",
-            image: UIImage(systemName: "cart"),
-            selectedImage: UIImage(systemName: "cart.fill")
+            title: "검색",
+            image: UIImage(systemName: "magnifyingglass"),
+            tag: 1
         )
         
         // 두번째 탭바 설정
@@ -47,9 +47,9 @@ class TabbarViewController: UITabBarController {
         secondTabController.title = "내정보"
         secondNavigationController.navigationBar.prefersLargeTitles = true
         secondNavigationController.tabBarItem = UITabBarItem(
-            title: "헤헤",
-            image: UIImage(systemName: "person"),
-            selectedImage: UIImage(systemName: "person.fill")
+            title: "찜",
+            image: UIImage(systemName: "heart"),
+            tag: 2
         )
         
         // 세 번째 탭바 설정
@@ -59,9 +59,9 @@ class TabbarViewController: UITabBarController {
         thirdTabController.title = "세 번째 탭"
         thirdNavigationController.navigationBar.prefersLargeTitles = true
         thirdNavigationController.tabBarItem = UITabBarItem(
-            title: "탭3",
+            title: "배민",
             image: UIImage(systemName: "star"),
-            selectedImage: UIImage(systemName: "star.fill")
+            tag: 3
         )
 
         // 네 번째 탭바 설정
@@ -71,9 +71,9 @@ class TabbarViewController: UITabBarController {
         fourthTabController.title = "네 번째 탭"
         fourthNavigationController.navigationBar.prefersLargeTitles = true
         fourthNavigationController.tabBarItem = UITabBarItem(
-            title: "탭4",
-            image: UIImage(systemName: "folder"),
-            selectedImage: UIImage(systemName: "folder.fill")
+            title: "주문내역",
+            image: UIImage(systemName: "newspaper"),
+            tag: 4
         )
 
         // 다섯 번째 탭바 설정
@@ -83,15 +83,13 @@ class TabbarViewController: UITabBarController {
         fifthTabController.title = "다섯 번째 탭"
         fifthNavigationController.navigationBar.prefersLargeTitles = true
         fifthNavigationController.tabBarItem = UITabBarItem(
-            title: "탭5",
-            image: UIImage(systemName: "gear"),
-            selectedImage: UIImage(systemName: "gear.fill")
+            title: "my배민",
+            image: UIImage(systemName: "face.smiling"),
+            tag: 5
         )
 
         let viewControllers = [firstTabController, secondNavigationController, thirdNavigationController, fourthNavigationController, fifthNavigationController]
-        self.setViewControllers(viewControllers, animated: true)
-
-        
+        self.setViewControllers(viewControllers, animated: true) 
     }
     
     

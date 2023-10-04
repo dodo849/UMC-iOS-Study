@@ -11,6 +11,7 @@ import UIKit
 
 class HomeViewController: BaseViewController {
     
+    let scrollView: UIScrollView = .init()
     let container: UIView = .init()
     
     let searchHeader: SearchHeader = .init()
@@ -21,13 +22,16 @@ class HomeViewController: BaseViewController {
     
 
     override func setStyle() {
-//        container.showsVerticalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.contentInsetAdjustmentBehavior = .never
+        scrollView.backgroundColor = .mainGray
+
         container.backgroundColor = .mainGray
-        
     }
     
     override func setHierarchy() {
-        view.addSubview(container)
+        view.addSubview(scrollView)
+        scrollView.addSubview(container)
         container.addSubview(searchHeader)
         container.addSubview(couponBanner)
         container.addSubview(serviceCategorySection)
@@ -37,12 +41,23 @@ class HomeViewController: BaseViewController {
     
     override func setLayout() {
         
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        ])
+        
         container.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            container.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            container.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            container.topAnchor.constraint(equalTo: view.topAnchor),
-            container.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            container.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            container.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            container.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            container.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            container.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            container.heightAnchor.constraint(equalToConstant: 1000)
         ])
         
         searchHeader.translatesAutoresizingMaskIntoConstraints = false
@@ -50,7 +65,7 @@ class HomeViewController: BaseViewController {
             searchHeader.leadingAnchor.constraint(equalTo: container.leadingAnchor),
             searchHeader.trailingAnchor.constraint(equalTo: container.trailingAnchor),
             searchHeader.topAnchor.constraint(equalTo: container.topAnchor),
-            searchHeader.heightAnchor.constraint(equalToConstant: 180)
+            searchHeader.heightAnchor.constraint(equalToConstant: 170)
         ])
 
         couponBanner.translatesAutoresizingMaskIntoConstraints = false

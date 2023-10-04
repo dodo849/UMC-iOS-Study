@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+import Then
+import SnapKit
+
 class SearchHeader: BaseView {
     
     let container: UIView = .init()
@@ -34,7 +37,13 @@ class SearchHeader: BaseView {
     override func setStyle() {
         
         container.backgroundColor = UIColor.mainMint
-        container.layer.cornerRadius = 20
+        let cornerRadius: CGFloat = 20.0
+        container.clipsToBounds = true
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = UIBezierPath(roundedRect: container.bounds,
+                                      byRoundingCorners: [.bottomLeft, .bottomRight],
+                                      cornerRadii: CGSize(width: cornerRadius, height: cornerRadius)).cgPath
+        container.layer.mask = maskLayer
         
         addressLabel.font = UIFont.boldSystemFont(ofSize: 20)
         addressLabel.textAlignment = .left
@@ -63,58 +72,57 @@ class SearchHeader: BaseView {
     }
     
     override func setLayout() {
+        
+        // Origin ⬇️
         container.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             container.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             container.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             container.topAnchor.constraint(equalTo: self.topAnchor),
-            container.heightAnchor.constraint(equalToConstant: 180)
+            container.heightAnchor.constraint(equalToConstant: 170)
         ])
         
         addressLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             addressLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 30),
-            addressLabel.topAnchor.constraint(equalTo: container.topAnchor, constant: 70),
+            addressLabel.topAnchor.constraint(equalTo: container.topAnchor, constant: 60),
         ])
-        
-        cartIcon!.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            cartIcon!.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
-            cartIcon!.topAnchor.constraint(equalTo: container.topAnchor, constant: 70),
-            cartIcon!.widthAnchor.constraint(equalToConstant: 25),
-            cartIcon!.heightAnchor.constraint(equalToConstant: 25)
-        ])
-        
-        bellIcon!.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            bellIcon!.trailingAnchor.constraint(equalTo: cartIcon!.leadingAnchor, constant: -30),
-            bellIcon!.topAnchor.constraint(equalTo: container.topAnchor, constant: 70),
-            bellIcon!.widthAnchor.constraint(equalToConstant: 25),
-            bellIcon!.heightAnchor.constraint(equalToConstant: 25)
-        ])
-        
-        menuIcon!.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            menuIcon!.trailingAnchor.constraint(equalTo: bellIcon!.leadingAnchor, constant: -30),
-            menuIcon!.topAnchor.constraint(equalTo: container.topAnchor, constant: 70),
-            menuIcon!.widthAnchor.constraint(equalToConstant: 25),
-            menuIcon!.heightAnchor.constraint(equalToConstant: 25)
-        ])
-        
-        searchBarContainer.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            searchBarContainer.topAnchor.constraint(equalTo: addressLabel.topAnchor, constant: 45),
-            searchBarContainer.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
-            searchBarContainer.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
-            searchBarContainer.heightAnchor.constraint(equalToConstant: 45)
-        ])
-        
-        searchBar.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            searchBar.topAnchor.constraint(equalTo: searchBarContainer.topAnchor),            searchBar.bottomAnchor.constraint(equalTo: searchBarContainer.bottomAnchor),
-            searchBar.leadingAnchor.constraint(equalTo: searchBarContainer.leadingAnchor),
-            searchBar.trailingAnchor.constraint(equalTo: searchBarContainer.trailingAnchor),
-        ])
+
+        // Then ⬇️
+        cartIcon!.do {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30).isActive = true
+            $0.topAnchor.constraint(equalTo: container.topAnchor, constant: 60).isActive = true
+            $0.widthAnchor.constraint(equalToConstant: 25).isActive = true
+            $0.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        }
+
+        bellIcon!.do {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.trailingAnchor.constraint(equalTo: cartIcon!.leadingAnchor, constant: -30).isActive = true
+            $0.topAnchor.constraint(equalTo: container.topAnchor, constant: 60).isActive = true
+            $0.widthAnchor.constraint(equalToConstant: 25).isActive = true
+            $0.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        }
+
+        // Snapkit ⬇️
+        menuIcon!.snp.makeConstraints { make in
+            make.trailing.equalTo(bellIcon!.snp.leading).offset(-30)
+            make.top.equalTo(container.snp.top).offset(60)
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+        }
+
+        searchBarContainer.snp.makeConstraints { make in
+            make.top.equalTo(addressLabel.snp.top).offset(45)
+            make.leading.equalTo(self.snp.leading).offset(30)
+            make.trailing.equalTo(self.snp.trailing).offset(-30)
+            make.height.equalTo(45)
+        }
+
+        searchBar.snp.makeConstraints { make in
+            make.edges.equalTo(searchBarContainer)
+        }
         
     }
 }
