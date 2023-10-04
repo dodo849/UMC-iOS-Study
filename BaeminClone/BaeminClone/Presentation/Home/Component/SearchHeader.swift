@@ -106,11 +106,11 @@ class SearchHeader: BaseView {
         }
 
         // Snapkit ⬇️
-        menuIcon!.snp.makeConstraints { make in
-            make.trailing.equalTo(bellIcon!.snp.leading).offset(-30)
-            make.top.equalTo(container.snp.top).offset(60)
-            make.width.equalTo(25)
-            make.height.equalTo(25)
+        menuIcon!.snp.makeConstraints {
+            $0.trailing.equalTo(bellIcon!.snp.leading).offset(-30)
+            $0.top.equalTo(container.snp.top).offset(60)
+            $0.width.equalTo(25)
+            $0.height.equalTo(25)
         }
 
         searchBarContainer.snp.makeConstraints { make in
