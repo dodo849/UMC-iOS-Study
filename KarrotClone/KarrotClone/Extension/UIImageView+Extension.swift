@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+import Kingfisher
+
 extension UIImageView {
     func setImageWithURL(_ url: String) {
         if let imageUrl = URL(string: url) {
@@ -26,12 +28,19 @@ extension UIImageView {
                     
                     // UI 업데이트는 메인 스레드에서 수행되어야 함
                     DispatchQueue.main.async {
-                        self.image = image
+                        // 애니메이션
+                        UIView.transition(
+                            with: self,
+                            duration: 0.2, // 애니메이션 지속 시간
+                            options: .transitionCrossDissolve, // 나타날 때 Cross Dissolve 애니메이션 적용
+                            animations: {
+                                self.image = image
+                            },
+                            completion: nil)
                     }
                 }
             }.resume()
         }
     }
-    
     
 }

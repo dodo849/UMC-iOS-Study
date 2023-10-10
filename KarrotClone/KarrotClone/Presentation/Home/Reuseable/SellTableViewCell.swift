@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+import Kingfisher
+
 class SellTableViewCell: BaseTableViewCell {
     
     private let container: UIView = .init()
@@ -126,18 +128,17 @@ class SellTableViewCell: BaseTableViewCell {
     }
 
     /// 셀의 데이터를 설정하는 메서드입니다.
-    func configure(
-        imageURL: String,
-        title: String,
-        price: String,
-        chatNum: Int,
-        wishNum: Int
-    ) {
-        self.productImage.setImageWithURL(imageURL)
-        self.titleLabel.text = title
-        self.priceLabel.text = price
-        self.chatLabel.text = "\(chatNum)"
-        self.wishLabel.text = "\(wishNum)"
+    func configure(_ data: SellProductModel) {
+        // URLSession 방식
+//        self.productImage.setImageWithURL(data.imageURL)
+        // 캐싱 라이브러리 적용
+        self.productImage.kf.setImage(with: URL(string: data.imageURL))
+        
+        self.titleLabel.text = data.title
+        self.priceLabel.text = data.price
+        self.addressAndTimeLabel.text = "\(data.address) · \(data.time)"
+        self.chatLabel.text = "\(data.chatNum)"
+        self.wishLabel.text = "\(data.wishNum)"
         
     }
     

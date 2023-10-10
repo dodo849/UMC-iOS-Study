@@ -19,9 +19,10 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     let tableView: UITableView = .init()
     let wirteButton: WirteButton = .init()
     
-    let sampleData = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let tableData = sellProducts
     
     override func setContent() {
+        
     }
     
     override func setStyle() {
@@ -78,20 +79,13 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Table View Method
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SellTableViewCell else { return UITableViewCell() }
-        cell.configure(
-            imageURL: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-hero-select-202011_FMT_WHH?wid=607&hei=556&fmt=jpeg&qlt=90&.v=1633623988000",
-            title: "에어팟 맥스 판매",
-            price: "56,000원",
-            chatNum: 1,
-            wishNum: 10
-        )
-        
+        cell.configure(tableData[indexPath.row])
         cell.selectionStyle = .none // 선택될때 배경색 바뀌는 것 없애기
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sampleData.count
+        return tableData.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

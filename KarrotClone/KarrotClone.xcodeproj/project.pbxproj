@@ -30,7 +30,7 @@
 		BC0DB8D52AD50264004E5430 /* WriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DB8D42AD50264004E5430 /* WriteButton.swift */; };
 		BC0DB8D72AD51CE6004E5430 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DB8D62AD51CE6004E5430 /* UIImageView+Extension.swift */; };
 		BC0DB8D92AD51FCA004E5430 /* SellProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DB8D82AD51FCA004E5430 /* SellProductModel.swift */; };
-		BC0DB8DC2AD520BC004E5430 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC0DB8DA2AD520BC004E5430 /* Model.xcdatamodeld */; };
+		BC0DB8EE2AD52D78004E5430 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC0DB8ED2AD52D78004E5430 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +57,7 @@
 		BC0DB8D42AD50264004E5430 /* WriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteButton.swift; sourceTree = "<group>"; };
 		BC0DB8D62AD51CE6004E5430 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		BC0DB8D82AD51FCA004E5430 /* SellProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellProductModel.swift; sourceTree = "<group>"; };
-		BC0DB8DB2AD520BC004E5430 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BC0DB8F12AD52E74004E5430 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0DB8EE2AD52D78004E5430 /* Kingfisher in Frameworks */,
 				BC0DB8C92AD4F618004E5430 /* SnapKit in Frameworks */,
 				BC0DB8CB2AD4F618004E5430 /* SnapKit-Dynamic in Frameworks */,
 			);
@@ -102,7 +103,7 @@
 				BC0DB88D2AD4F374004E5430 /* Assets.xcassets */,
 				BC0DB88F2AD4F374004E5430 /* LaunchScreen.storyboard */,
 				BC0DB8922AD4F374004E5430 /* Info.plist */,
-				BC0DB8DA2AD520BC004E5430 /* Model.xcdatamodeld */,
+				BC0DB8F12AD52E74004E5430 /* README.md */,
 			);
 			path = KarrotClone;
 			sourceTree = "<group>";
@@ -210,6 +211,7 @@
 			packageProductDependencies = (
 				BC0DB8C82AD4F618004E5430 /* SnapKit */,
 				BC0DB8CA2AD4F618004E5430 /* SnapKit-Dynamic */,
+				BC0DB8ED2AD52D78004E5430 /* Kingfisher */,
 			);
 			productName = KarrotClone;
 			productReference = BC0DB8812AD4F373004E5430 /* KarrotClone.app */;
@@ -241,6 +243,7 @@
 			mainGroup = BC0DB8782AD4F373004E5430;
 			packageReferences = (
 				BC0DB8C72AD4F618004E5430 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				BC0DB8EC2AD52D78004E5430 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = BC0DB8822AD4F373004E5430 /* Products */;
 			projectDirPath = "";
@@ -286,7 +289,6 @@
 				BC0DB8D12AD4FA50004E5430 /* BaseTableViewCell+Extension.swift in Sources */,
 				BC0DB8D72AD51CE6004E5430 /* UIImageView+Extension.swift in Sources */,
 				BC0DB8B02AD4F3C7004E5430 /* SceneDelegate.swift in Sources */,
-				BC0DB8DC2AD520BC004E5430 /* Model.xcdatamodeld in Sources */,
 				BC0DB8D92AD51FCA004E5430 /* SellProductModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +522,14 @@
 				minimumVersion = 5.6.0;
 			};
 		};
+		BC0DB8EC2AD52D78004E5430 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -533,20 +543,12 @@
 			package = BC0DB8C72AD4F618004E5430 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
 		};
-/* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		BC0DB8DA2AD520BC004E5430 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BC0DB8DB2AD520BC004E5430 /* Model.xcdatamodel */,
-			);
-			currentVersion = BC0DB8DB2AD520BC004E5430 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+		BC0DB8ED2AD52D78004E5430 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC0DB8EC2AD52D78004E5430 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
-/* End XCVersionGroup section */
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC0DB8792AD4F373004E5430 /* Project object */;
 }
