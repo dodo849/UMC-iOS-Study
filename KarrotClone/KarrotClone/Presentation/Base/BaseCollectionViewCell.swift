@@ -1,6 +1,6 @@
 //
 //  BaseCollectionViewCell.swift
-//  HumanscapeShoppingMall
+//  KarrotClone
 //
 //  Created by DOYEON LEE on 2023/05/30.
 //
