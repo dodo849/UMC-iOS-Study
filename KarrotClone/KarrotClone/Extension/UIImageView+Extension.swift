@@ -23,6 +23,7 @@ extension UIImageView {
                     return
                 }
                 
+                
                 // 데이터를 UIImage로 변환
                 if let imageData = data, let image = UIImage(data: imageData) {
                     

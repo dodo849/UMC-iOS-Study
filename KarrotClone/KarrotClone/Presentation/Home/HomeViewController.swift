@@ -11,6 +11,7 @@ import UIKit
 import SnapKit
 
 class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+
     
     fileprivate let cellId = "SellTableViewCell"
     
