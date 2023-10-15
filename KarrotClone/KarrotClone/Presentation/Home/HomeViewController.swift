@@ -11,9 +11,9 @@ import UIKit
 import SnapKit
 
 class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
-
     
     fileprivate let cellId = "SellTableViewCell"
+    fileprivate let horizonScrollCellId = "HorizonScrollSellTableViewCell"
     
     let container: UIView = .init()
     let header: HomeHeader = .init()
@@ -39,6 +39,10 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         tableView.register(
             SellTableViewCell.self,
             forCellReuseIdentifier: cellId
+        )
+        tableView.register(
+            HorizonScrollSellTableViewCell.self,
+            forCellReuseIdentifier: horizonScrollCellId
         )
         
     }
@@ -79,10 +83,21 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
     // MARK: - Table View Method
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SellTableViewCell else { return UITableViewCell() }
-        cell.configure(tableData[indexPath.row])
-        cell.selectionStyle = .none // 선택될때 배경색 바뀌는 것 없애기
-        return cell
+        
+        
+        if (indexPath.row + 1) % 3 == 0 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: horizonScrollCellId, for: indexPath) as? HorizonScrollSellTableViewCell else { return UITableViewCell() }
+            cell.configure(tableData[indexPath.row])
+            cell.selectionStyle = .none // 선택될때 배경색 바뀌는 것 없애기
+            return cell
+            
+        } else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SellTableViewCell else { return UITableViewCell() }
+            cell.configure(tableData[indexPath.row])
+            cell.selectionStyle = .none // 선택될때 배경색 바뀌는 것 없애기
+            return cell
+        }
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -94,3 +109,4 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     }
     
 }
+

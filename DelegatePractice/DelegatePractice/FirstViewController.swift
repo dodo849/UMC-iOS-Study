@@ -7,11 +7,7 @@
 
 import UIKit
 
-protocol ChangeLabelDelegate {
-    func changeLabel(text: String)
-}
-
-class FirstViewController: UIViewController, ChangeLabelDelegate {
+class FirstViewController: UIViewController {
     
     func changeLabel(text: String) {
         textLabel.text = text
@@ -22,7 +18,9 @@ class FirstViewController: UIViewController, ChangeLabelDelegate {
     @IBAction func tapNextView(_ sender: Any) {
         guard let nextVC = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else { return }
         
-        nextVC.delegate = self
+        nextVC.tapDismissButtonCallback = { [weak self] text in
+            self?.textLabel.text = text
+        }
         nextVC.modalPresentationStyle = .fullScreen
         present(nextVC, animated: true, completion: nil)
     }

@@ -12,12 +12,11 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     @IBAction func tapDismissButton(_ sender: Any) {
-        delegate?.changeLabel(text: textField.text ?? "")
+        (tapDismissButtonCallback ?? {_ in})(textField.text ?? "")
         dismiss(animated: true)
     }
     
-    var delegate: ChangeLabelDelegate?
-    
+    var tapDismissButtonCallback: ((_: String) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()

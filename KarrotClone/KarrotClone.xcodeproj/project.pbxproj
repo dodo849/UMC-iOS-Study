@@ -31,6 +31,7 @@
 		BC0DB8D72AD51CE6004E5430 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DB8D62AD51CE6004E5430 /* UIImageView+Extension.swift */; };
 		BC0DB8D92AD51FCA004E5430 /* SellProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DB8D82AD51FCA004E5430 /* SellProductModel.swift */; };
 		BC0DB8EE2AD52D78004E5430 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC0DB8ED2AD52D78004E5430 /* Kingfisher */; };
+		BCFBC3D12ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFBC3D02ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		BC0DB8D62AD51CE6004E5430 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		BC0DB8D82AD51FCA004E5430 /* SellProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellProductModel.swift; sourceTree = "<group>"; };
 		BC0DB8F12AD52E74004E5430 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BCFBC3D02ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonScrollSellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				BC0DB8CD2AD4F6C0004E5430 /* SellTableViewCell.swift */,
+				BCFBC3D02ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift */,
 			);
 			path = Reuseable;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				BC0DB8D52AD50264004E5430 /* WriteButton.swift in Sources */,
 				BC0DB8892AD4F373004E5430 /* ViewController.swift in Sources */,
 				BC0DB8B92AD4F3C7004E5430 /* TabBarViewController.swift in Sources */,
+				BCFBC3D12ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift in Sources */,
 				BC0DB8BA2AD4F3C7004E5430 /* BaseViewController.swift in Sources */,
 				BC0DB8BE2AD4F3C7004E5430 /* Color+Extension.swift in Sources */,
 				BC0DB8BB2AD4F3C7004E5430 /* BaseViewModel.swift in Sources */,

@@ -25,7 +25,6 @@ class BaseTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        
     }
     
     func setContent() { }
