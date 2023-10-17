@@ -36,7 +36,7 @@
 ### 한 테이블 뷰에 2가지 셀 타입 적용
 구조 |
 --|
-![image](https://github.com/dodo849/UMC-iOS-Study/assets/71880682/750ef46c-af5b-417f-8d52-f455669e46f3) |
+![image](https://github.com/dodo849/UMC-iOS-Study/assets/71880682/3b53c0ed-337e-4e5d-94eb-cf9b5826404b) |
 
 <br/>
 
