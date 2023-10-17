@@ -83,21 +83,24 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
     // MARK: - Table View Method
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
         if (indexPath.row + 1) % 5 == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: horizonScrollCellId, for: indexPath) as? ScrollTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(
+                withIdentifier: horizonScrollCellId, 
+                for: indexPath
+            ) as? ScrollTableViewCell else { return UITableViewCell() }
             cell.configure(tableData.shuffled())
             cell.selectionStyle = .none // 선택될때 배경색 바뀌는 것 없애기
             return cell
             
         } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SellTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(
+                withIdentifier: cellId,
+                for: indexPath
+            ) as? SellTableViewCell else { return UITableViewCell() }
             cell.configure(tableData[indexPath.row])
             cell.selectionStyle = .none // 선택될때 배경색 바뀌는 것 없애기
             return cell
         }
-
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

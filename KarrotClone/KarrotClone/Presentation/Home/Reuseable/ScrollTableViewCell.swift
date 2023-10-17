@@ -95,7 +95,6 @@ class ScrollTableViewCell: BaseTableViewCell {
             width: (subCellWidth + subCellSpacing) * CGFloat(contentCount),
             height: subCellHeight-10 // FIXME: 왜 조금 빼줘야 세로 스크롤이 막히는지 모르겠음
         ) // width는 셀 갯수와 너비로 계산
-        print("###\(self.scrollContentStackView.frame) \(self.scrollView.contentSize)")
         self.scrollView.contentSize = self.scrollContentStackView.frame.size
     }
 }
