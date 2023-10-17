@@ -12,6 +12,7 @@ import Kingfisher
 
 class SellTableViewCell: BaseTableViewCell {
     
+    // MARK: UI Component
     private let container: UIView = .init()
     
     private var productImage: UIImageView = .init()
@@ -26,7 +27,7 @@ class SellTableViewCell: BaseTableViewCell {
     private let wishLabel: UILabel = .init()
     
     
-
+    // MARK: Override Method
     override func setContent() {
         
         chatIcon = UIImageView(image: UIImage(systemName: "message.badge")!)
@@ -42,7 +43,7 @@ class SellTableViewCell: BaseTableViewCell {
         // 임시 이미지
         productImage.contentMode = .scaleAspectFill
         productImage.clipsToBounds = true
-        productImage.image = createDefaultImage()
+        productImage.setDefaultImage()
         productImage.layer.cornerRadius = 10
         productImage.layer.borderWidth = 0.5 // 테두리 두께
         productImage.layer.borderColor = UIColor.systemGray.withAlphaComponent(0.3).cgColor
@@ -140,10 +141,5 @@ class SellTableViewCell: BaseTableViewCell {
         self.chatLabel.text = "\(data.chatNum)"
         self.wishLabel.text = "\(data.wishNum)"
         
-    }
-    
-    /// 셀에 이미지를 설정하는 메서드입니다. fade in/out 애니메이션이 적용됩니다.
-    func imageConfigure(image: UIImage) {
-        self.productImage.image = image
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC09F7EB2ADE6C490073340E /* SubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09F7EA2ADE6C490073340E /* SubCell.swift */; };
+		BC09F7ED2ADE6D940073340E /* SubCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09F7EC2ADE6D940073340E /* SubCellHeader.swift */; };
 		BC0DB8892AD4F373004E5430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DB8882AD4F373004E5430 /* ViewController.swift */; };
 		BC0DB88C2AD4F373004E5430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0DB88A2AD4F373004E5430 /* Main.storyboard */; };
 		BC0DB88E2AD4F374004E5430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0DB88D2AD4F374004E5430 /* Assets.xcassets */; };
@@ -31,10 +33,13 @@
 		BC0DB8D72AD51CE6004E5430 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DB8D62AD51CE6004E5430 /* UIImageView+Extension.swift */; };
 		BC0DB8D92AD51FCA004E5430 /* SellProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DB8D82AD51FCA004E5430 /* SellProductModel.swift */; };
 		BC0DB8EE2AD52D78004E5430 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC0DB8ED2AD52D78004E5430 /* Kingfisher */; };
-		BCFBC3D12ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFBC3D02ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift */; };
+		BCFBC3D12ADBCED2007C62A4 /* ScrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFBC3D02ADBCED2007C62A4 /* ScrollTableViewCell.swift */; };
+		BCFBC3D32ADBDD7A007C62A4 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFBC3D22ADBDD7A007C62A4 /* UILabel+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC09F7EA2ADE6C490073340E /* SubCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCell.swift; sourceTree = "<group>"; };
+		BC09F7EC2ADE6D940073340E /* SubCellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCellHeader.swift; sourceTree = "<group>"; };
 		BC0DB8812AD4F373004E5430 /* KarrotClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarrotClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0DB8882AD4F373004E5430 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC0DB88B2AD4F373004E5430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +64,8 @@
 		BC0DB8D62AD51CE6004E5430 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		BC0DB8D82AD51FCA004E5430 /* SellProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellProductModel.swift; sourceTree = "<group>"; };
 		BC0DB8F12AD52E74004E5430 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		BCFBC3D02ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonScrollSellTableViewCell.swift; sourceTree = "<group>"; };
+		BCFBC3D02ADBCED2007C62A4 /* ScrollTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTableViewCell.swift; sourceTree = "<group>"; };
+		BCFBC3D22ADBDD7A007C62A4 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,7 @@
 				BC0DB8AF2AD4F3C7004E5430 /* BaseView+Extension.swift */,
 				BC0DB8D02AD4FA50004E5430 /* BaseTableViewCell+Extension.swift */,
 				BC0DB8D62AD51CE6004E5430 /* UIImageView+Extension.swift */,
+				BCFBC3D22ADBDD7A007C62A4 /* UILabel+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -182,7 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				BC0DB8CD2AD4F6C0004E5430 /* SellTableViewCell.swift */,
-				BCFBC3D02ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift */,
+				BCFBC3D02ADBCED2007C62A4 /* ScrollTableViewCell.swift */,
+				BC09F7EA2ADE6C490073340E /* SubCell.swift */,
+				BC09F7EC2ADE6D940073340E /* SubCellHeader.swift */,
 			);
 			path = Reuseable;
 			sourceTree = "<group>";
@@ -281,17 +290,20 @@
 				BC0DB8D52AD50264004E5430 /* WriteButton.swift in Sources */,
 				BC0DB8892AD4F373004E5430 /* ViewController.swift in Sources */,
 				BC0DB8B92AD4F3C7004E5430 /* TabBarViewController.swift in Sources */,
-				BCFBC3D12ADBCED2007C62A4 /* HorizonScrollSellTableViewCell.swift in Sources */,
+				BCFBC3D12ADBCED2007C62A4 /* ScrollTableViewCell.swift in Sources */,
 				BC0DB8BA2AD4F3C7004E5430 /* BaseViewController.swift in Sources */,
 				BC0DB8BE2AD4F3C7004E5430 /* Color+Extension.swift in Sources */,
 				BC0DB8BB2AD4F3C7004E5430 /* BaseViewModel.swift in Sources */,
+				BC09F7EB2ADE6C490073340E /* SubCell.swift in Sources */,
 				BC0DB8C12AD4F427004E5430 /* HomeViewController.swift in Sources */,
+				BCFBC3D32ADBDD7A007C62A4 /* UILabel+Extension.swift in Sources */,
 				BC0DB8BF2AD4F3C7004E5430 /* BaseView+Extension.swift in Sources */,
 				BC0DB8D32AD4FE6C004E5430 /* HomeHeader.swift in Sources */,
 				BC0DB8BD2AD4F3C7004E5430 /* BaseView.swift in Sources */,
 				BC0DB8C62AD4F5A6004E5430 /* BaseTableViewCell.swift in Sources */,
 				BC0DB8D12AD4FA50004E5430 /* BaseTableViewCell+Extension.swift in Sources */,
 				BC0DB8D72AD51CE6004E5430 /* UIImageView+Extension.swift in Sources */,
+				BC09F7ED2ADE6D940073340E /* SubCellHeader.swift in Sources */,
 				BC0DB8B02AD4F3C7004E5430 /* SceneDelegate.swift in Sources */,
 				BC0DB8D92AD51FCA004E5430 /* SellProductModel.swift in Sources */,
 			);

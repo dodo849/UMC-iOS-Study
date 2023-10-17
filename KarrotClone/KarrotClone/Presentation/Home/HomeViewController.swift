@@ -41,7 +41,7 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
             forCellReuseIdentifier: cellId
         )
         tableView.register(
-            HorizonScrollSellTableViewCell.self,
+            ScrollTableViewCell.self,
             forCellReuseIdentifier: horizonScrollCellId
         )
         
@@ -85,9 +85,9 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        if (indexPath.row + 1) % 3 == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: horizonScrollCellId, for: indexPath) as? HorizonScrollSellTableViewCell else { return UITableViewCell() }
-            cell.configure(tableData[indexPath.row])
+        if (indexPath.row + 1) % 5 == 0 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: horizonScrollCellId, for: indexPath) as? ScrollTableViewCell else { return UITableViewCell() }
+            cell.configure(tableData.shuffled())
             cell.selectionStyle = .none // 선택될때 배경색 바뀌는 것 없애기
             return cell
             
