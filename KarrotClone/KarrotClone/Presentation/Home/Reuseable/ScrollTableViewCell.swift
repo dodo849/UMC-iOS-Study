@@ -57,7 +57,6 @@ class ScrollTableViewCell: BaseTableViewCell {
         subCellHeader.snp.makeConstraints{
             $0.top.equalToSuperview()
             $0.leading.trailing.equalToSuperview()
-            $0.height.equalTo(30)
         }
         
         scrollView.snp.makeConstraints {
@@ -93,9 +92,8 @@ class ScrollTableViewCell: BaseTableViewCell {
             x: 0,
             y: 0,
             width: (subCellWidth + subCellSpacing) * CGFloat(contentCount),
-            height: subCellHeight-10 // FIXME: 왜 조금 빼줘야 세로 스크롤이 막히는지 모르겠음
+            height: subCellHeight - 10 // NOTE: 왜 조금 빼줘야 세로 스크롤이 막히는지 모르겠음
         ) // width는 셀 갯수와 너비로 계산
-        print("###\(self.scrollContentStackView.frame) \(self.scrollView.contentSize)")
         self.scrollView.contentSize = self.scrollContentStackView.frame.size
     }
 }
