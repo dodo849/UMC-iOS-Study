@@ -88,7 +88,7 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
                 withIdentifier: horizonScrollCellId, 
                 for: indexPath
             ) as? ScrollTableViewCell else { return UITableViewCell() }
-            cell.configure(tableData.shuffled())
+            cell.configure(tableData)
             cell.selectionStyle = .none // 선택될때 배경색 바뀌는 것 없애기
             return cell
             

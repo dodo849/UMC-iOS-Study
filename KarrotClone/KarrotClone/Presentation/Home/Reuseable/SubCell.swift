@@ -21,13 +21,11 @@ class SubCell: BaseView {
         productImage.setDefaultImage()
         titleLabel.text = "테스트"
         priceLabel.text = "테스트중입니당"
-        
     }
     
     override func setStyle() {
         stackContainer.axis = .vertical
-        stackContainer.spacing = 3
-        stackContainer.distribution = .fill
+        stackContainer.distribution = .equalSpacing
         
         productImage.layer.cornerRadius = 10
         productImage.contentMode = .scaleAspectFill
