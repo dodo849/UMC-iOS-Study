@@ -53,16 +53,20 @@ class TabbarViewController: UITabBarController {
         )
         
         // 세 번째 탭바 설정
+        let storyboard = UIStoryboard(name: "DetailStoryboard", bundle: nil) // "Main"은 스토리보드의 이름입니다.
+        guard let thirdTabController = storyboard.instantiateViewController(withIdentifier: "DetailStoryboard") as? UIViewController else {return}
+        thirdTabController.title = "주문 탭"
         let thirdNavigationController = UINavigationController()
-        let thirdTabController = UIViewController()
+//            let thirdTabController = UIViewController()
         thirdNavigationController.addChild(thirdTabController)
-        thirdTabController.title = "세 번째 탭"
-        thirdNavigationController.navigationBar.prefersLargeTitles = true
+        thirdTabController.title = "주문 탭"
+        thirdNavigationController.navigationBar.prefersLargeTitles = false
         thirdNavigationController.tabBarItem = UITabBarItem(
             title: "배민",
             image: UIImage(systemName: "star"),
             tag: 3
         )
+        
 
         // 네 번째 탭바 설정
         let fourthNavigationController = UINavigationController()

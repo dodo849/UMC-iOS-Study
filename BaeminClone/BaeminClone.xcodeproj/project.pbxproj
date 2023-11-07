@@ -17,6 +17,9 @@
 		BC4BCCB82AC2655C0050C4EB /* BulkDiscountSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BCCB72AC2655C0050C4EB /* BulkDiscountSection.swift */; };
 		BC4BCCBA2AC288E20050C4EB /* AdBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BCCB92AC288E20050C4EB /* AdBanner.swift */; };
 		BC4BCCBB2AC2CBF20050C4EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFFF9D62ABF095F00A0C625 /* Main.storyboard */; };
+		BC62E6582AF9574E00FE8957 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62E6572AF9574E00FE8957 /* DetailViewController.swift */; };
+		BC82444C2AFA809C00AB5F23 /* DetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC82444B2AFA809C00AB5F23 /* DetailStoryboard.storyboard */; };
+		BC82444E2AFA8D6C00AB5F23 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82444D2AFA8D6C00AB5F23 /* CartViewController.swift */; };
 		BCFFF9D12ABF095F00A0C625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFF9D02ABF095F00A0C625 /* AppDelegate.swift */; };
 		BCFFF9D32ABF095F00A0C625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFF9D22ABF095F00A0C625 /* SceneDelegate.swift */; };
 		BCFFF9D52ABF095F00A0C625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFF9D42ABF095F00A0C625 /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 		BC4BCCB32AC159EE0050C4EB /* ServiceCategorySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategorySection.swift; sourceTree = "<group>"; };
 		BC4BCCB72AC2655C0050C4EB /* BulkDiscountSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkDiscountSection.swift; sourceTree = "<group>"; };
 		BC4BCCB92AC288E20050C4EB /* AdBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBanner.swift; sourceTree = "<group>"; };
+		BC62E6572AF9574E00FE8957 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BC82444B2AFA809C00AB5F23 /* DetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailStoryboard.storyboard; sourceTree = "<group>"; };
+		BC82444D2AFA8D6C00AB5F23 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		BCFFF9CD2ABF095F00A0C625 /* BaeminClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaeminClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFFF9D02ABF095F00A0C625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFFF9D22ABF095F00A0C625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +95,16 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		BC62E6562AF9572C00FE8957 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BC62E6572AF9574E00FE8957 /* DetailViewController.swift */,
+				BC82444B2AFA809C00AB5F23 /* DetailStoryboard.storyboard */,
+				BC82444D2AFA8D6C00AB5F23 /* CartViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		BCFFF9C42ABF095F00A0C625 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +141,7 @@
 		BCFFF9E42ABF09E000A0C625 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				BC62E6562AF9572C00FE8957 /* Detail */,
 				BCFFFA0E2ABF0D4F00A0C625 /* Home */,
 				BCFFF9F02ABF09E000A0C625 /* TabBar */,
 				BCFFF9F72ABF09E000A0C625 /* Base */,
@@ -259,6 +276,7 @@
 			files = (
 				BC4BCCB52AC1D5CF0050C4EB /* BMHANNAPro.ttf in Resources */,
 				BCFFF9DD2ABF096100A0C625 /* LaunchScreen.storyboard in Resources */,
+				BC82444C2AFA809C00AB5F23 /* DetailStoryboard.storyboard in Resources */,
 				BCFFF9DA2ABF096100A0C625 /* Assets.xcassets in Resources */,
 				BC4BCCBB2AC2CBF20050C4EB /* Main.storyboard in Resources */,
 			);
@@ -280,6 +298,8 @@
 				BCFFFA232ABF232300A0C625 /* CouponBanner.swift in Sources */,
 				BCFFF9D52ABF095F00A0C625 /* ViewController.swift in Sources */,
 				BCFFFA042ABF09E000A0C625 /* BaseCollectionViewCell.swift in Sources */,
+				BC82444E2AFA8D6C00AB5F23 /* CartViewController.swift in Sources */,
+				BC62E6582AF9574E00FE8957 /* DetailViewController.swift in Sources */,
 				BCFFFA122ABF0DC800A0C625 /* HomeViewController.swift in Sources */,
 				BCFFFA022ABF09E000A0C625 /* BaseViewController.swift in Sources */,
 				BCFFFA1E2ABF0F4F00A0C625 /* SearchHeader.swift in Sources */,
