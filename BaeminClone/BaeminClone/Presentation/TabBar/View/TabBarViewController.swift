@@ -53,7 +53,7 @@ class TabbarViewController: UITabBarController {
         )
         
         // 세 번째 탭바 설정
-        let storyboard = UIStoryboard(name: "DetailStoryboard", bundle: nil) // "Main"은 스토리보드의 이름입니다.
+        let storyboard = UIStoryboard(name: "DetailStoryboard", bundle: nil) // "DetailStoryboard"은 스토리보드의 이름입니다.
         guard let thirdTabController = storyboard.instantiateViewController(withIdentifier: "DetailStoryboard") as? UIViewController else {return}
         thirdTabController.title = "주문 탭"
         let thirdNavigationController = UINavigationController()
