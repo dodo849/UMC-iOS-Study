@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09EC8718EE44ACFE5E64ADB5C9EF2364 /* ReverseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B4A641C51A2F847423AF05AE2B2FB5 /* ReverseAction.swift */; };
+		0CC168E3848D90E8F44163F7B7DEED7B /* Comets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA9E19B9AC6CEAA645D3CB608E733DF /* Comets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1912A16E53C5367F5C0A5269B013192F /* TweenKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD250797B2DA8D0C11D49FFEBE829918 /* TweenKit-dummy.m */; };
+		2E0FCA56B58C1EACCC17AFBC1A2E833B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221B02872446A8CF8117175232139A6 /* Math.swift */; };
+		323B74CF15CBE6F0B08AEEF6C3746657 /* ActionSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B7BDECEA5B093EA3F959AB96B5EF3 /* ActionSequence.swift */; };
+		359DEB02CA702ABEE6B3217E74151A03 /* Pods-OpenSourceAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9458315204AD17D3481352207A154040 /* Pods-OpenSourceAnimation-dummy.m */; };
+		3A2FFF70E460D71C9AA61102674EDACE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		3FB108C2CD218689379E0A86E135B990 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		414D10F39C2B8A54A83E1FD88E6A9475 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79ED017DCA7EDF49DBDF55A728A528 /* Animation.swift */; };
+		4CDACE02B0F3FEC16D904F82FE947200 /* Tweenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DEA64E53694FF541EBF8E78C80D45C /* Tweenable.swift */; };
+		50AD782C9DBEFF306AA540640578A164 /* Comets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C84BF66EC0983D33BA1809FB53E74FF1 /* Comets-dummy.m */; };
+		634F717AC313ACB87A993302BF66693A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		63F40D465E1C6D6DA522BF5C4A605580 /* ActionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D2D8AF6BCE795C267533629F03728 /* ActionGroup.swift */; };
+		67AF6B402C1CBB7A558D46468505B892 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6231F7CCD9ABF318D41C1AE5E745F09 /* Easing.swift */; };
+		6F03DB5410D1C26C8EF8D5176AB39260 /* RepeatForeverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6753843685F9A002DD6836174D693 /* RepeatForeverAction.swift */; };
+		7C3A01B795D0910B2FA37A51F10D660F /* TweenKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B73D7D24D680AF3EA5DBFAA8BF4981FC /* TweenKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8369F69B29DA2962CF1C66BAD4121AFE /* Comet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804536376AA7661B50C176845DB5CD2B /* Comet.swift */; };
+		9852F7A87B55195141ED0747DC20DD66 /* YoyoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C451CE42CBC8FCE709C34DD25E5C7 /* YoyoAction.swift */; };
+		98D8206E55448DAF1B93365A14AC3B72 /* RepeatAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D24F9C61ABB7DC129C7007C3E807A0 /* RepeatAction.swift */; };
+		A31021BDB561E155705DCD509620C2B3 /* UIKit+Tweenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94181EA88A64D6DA535B779639CF712 /* UIKit+Tweenable.swift */; };
+		A4CD0227435ABEDEC559434E5663E241 /* BezierAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FD94837D7B0A3133D2C71A20092D1 /* BezierAction.swift */; };
+		A82DD004E9F4A14E1D9AAC5C3F42643B /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7BCFB5E283B3FE34D75B84FC3C6C7 /* Lazy.swift */; };
+		B2B9C1DDD18273C57C846AF89C7B155D /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F88E309821BC78B50440860092EDB6C /* Action.swift */; };
+		BBE021954F4C92D6A099D3FABA347C93 /* UIImage+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5B323F37381737EBBDC35FFF251BFB /* UIImage+Rotate.swift */; };
+		C12B9A0FA5EA50D9BAB3C37BFAEF2042 /* Pods-OpenSourceAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3933C0A8ACEE055912D2114D171223DA /* Pods-OpenSourceAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA07E9B805827BBC5FDD258A5C360449 /* RunBlockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53F54DE1FFC7945097FBFB313E40EB /* RunBlockAction.swift */; };
+		CD2B76B5B1B2FA1D5A90159AFC6F85E8 /* BezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFDBA4947468A8FEE55F37EED2D5C92 /* BezierPath.swift */; };
+		D4219527F2BAFBAE1B9A090E9D3A3954 /* CoreGraphics+Tweenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD368D972D3CD447397C3E8CF058CA /* CoreGraphics+Tweenable.swift */; };
+		D45966BD5EE6B3F432C9A391C525B836 /* UIBezierPath+BezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1296802919A1230074DF9EBE4BB50 /* UIBezierPath+BezierPath.swift */; };
+		D601F22220D3A2CFD41052C09F3649AD /* DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03400B9EEFFCCC8AD4865F54FB5CF93E /* DisplayLink.swift */; };
+		D94A384BE148B6BB6463FEDCF36D98E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		E04B3A8590D38FC668C362D7B01D12B5 /* ActionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58688202AF37C770DCF19AD406782798 /* ActionScheduler.swift */; };
+		F34F8AC348B5CA9577C352A0914F7F04 /* InterpolateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE208FD2BD5ACF0B91965E7560B89CDA /* InterpolateAction.swift */; };
+		F440C89EFEEDD8AA346478162818D78E /* ArcAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662A622A7CD17686DCEC17D4D385D57 /* ArcAction.swift */; };
+		FCD367AE57714E6A740DCD6CDE37544C /* ActionScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFA68CBBB70878994A71FF60BDA7CF8 /* ActionScrubber.swift */; };
+		FEA90061160257A3362C637C2EE4481D /* DelayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95A3C55F06C88381ECD32E6CEE84C8 /* DelayAction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1724BEA0F264E72C24C61C56FE9599C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4BD4A165F77386C7C44BC76339DCBAC;
+			remoteInfo = TweenKit;
+		};
+		B1A81B4698FBEE4C856EAAEAD0228696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 125B6FEA16CD0511AAB23164F8FDFACD;
+			remoteInfo = Comets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03400B9EEFFCCC8AD4865F54FB5CF93E /* DisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisplayLink.swift; path = TweenKit/TweenKit/DisplayLink.swift; sourceTree = "<group>"; };
+		0BFDBA4947468A8FEE55F37EED2D5C92 /* BezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BezierPath.swift; path = TweenKit/TweenKit/BezierPath.swift; sourceTree = "<group>"; };
+		0D4D2D8AF6BCE795C267533629F03728 /* ActionGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionGroup.swift; path = TweenKit/TweenKit/ActionGroup.swift; sourceTree = "<group>"; };
+		1A1C451CE42CBC8FCE709C34DD25E5C7 /* YoyoAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoyoAction.swift; path = TweenKit/TweenKit/YoyoAction.swift; sourceTree = "<group>"; };
+		1B9F5F9C1C648F6AE4279BAB5E5DE628 /* Comets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Comets-prefix.pch"; sourceTree = "<group>"; };
+		1C5B323F37381737EBBDC35FFF251BFB /* UIImage+Rotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Rotate.swift"; path = "Comets/Sources/UIImage+Rotate.swift"; sourceTree = "<group>"; };
+		1CD6753843685F9A002DD6836174D693 /* RepeatForeverAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RepeatForeverAction.swift; path = TweenKit/TweenKit/RepeatForeverAction.swift; sourceTree = "<group>"; };
+		2106D2E391B766F728678D6C93ABE467 /* Comets */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Comets; path = Comets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F7BCFB5E283B3FE34D75B84FC3C6C7 /* Lazy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lazy.swift; path = TweenKit/TweenKit/Lazy.swift; sourceTree = "<group>"; };
+		2F88E309821BC78B50440860092EDB6C /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = TweenKit/TweenKit/Action.swift; sourceTree = "<group>"; };
+		33B3DBAF5769B552E0930B54988268B8 /* Pods-OpenSourceAnimation */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OpenSourceAnimation"; path = Pods_OpenSourceAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D24F9C61ABB7DC129C7007C3E807A0 /* RepeatAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RepeatAction.swift; path = TweenKit/TweenKit/RepeatAction.swift; sourceTree = "<group>"; };
+		37D1296802919A1230074DF9EBE4BB50 /* UIBezierPath+BezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBezierPath+BezierPath.swift"; path = "TweenKit/TweenKit/UIBezierPath+BezierPath.swift"; sourceTree = "<group>"; };
+		3933C0A8ACEE055912D2114D171223DA /* Pods-OpenSourceAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenSourceAnimation-umbrella.h"; sourceTree = "<group>"; };
+		39BC9C206D6B349970B34E3075C4CB2B /* TweenKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TweenKit.debug.xcconfig; sourceTree = "<group>"; };
+		464A2CE7CEC38087C98FC1E6B8342E31 /* Pods-OpenSourceAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenSourceAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		49A17CD0204CCB3528122A89097AF1A2 /* Pods-OpenSourceAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenSourceAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		58688202AF37C770DCF19AD406782798 /* ActionScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionScheduler.swift; path = TweenKit/TweenKit/ActionScheduler.swift; sourceTree = "<group>"; };
+		5FFA68CBBB70878994A71FF60BDA7CF8 /* ActionScrubber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionScrubber.swift; path = TweenKit/TweenKit/ActionScrubber.swift; sourceTree = "<group>"; };
+		68DEA64E53694FF541EBF8E78C80D45C /* Tweenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tweenable.swift; path = TweenKit/TweenKit/Tweenable.swift; sourceTree = "<group>"; };
+		6B0B7BDECEA5B093EA3F959AB96B5EF3 /* ActionSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSequence.swift; path = TweenKit/TweenKit/ActionSequence.swift; sourceTree = "<group>"; };
+		6DBD368D972D3CD447397C3E8CF058CA /* CoreGraphics+Tweenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreGraphics+Tweenable.swift"; path = "TweenKit/TweenKit/CoreGraphics+Tweenable.swift"; sourceTree = "<group>"; };
+		711FD94837D7B0A3133D2C71A20092D1 /* BezierAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BezierAction.swift; path = TweenKit/TweenKit/BezierAction.swift; sourceTree = "<group>"; };
+		74F7B8021D23B2755972CC00BC14169E /* TweenKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TweenKit.release.xcconfig; sourceTree = "<group>"; };
+		7B95A3C55F06C88381ECD32E6CEE84C8 /* DelayAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelayAction.swift; path = TweenKit/TweenKit/DelayAction.swift; sourceTree = "<group>"; };
+		7BE67DEA0C2E2B9EB467DDB41446EEF9 /* Pods-OpenSourceAnimation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenSourceAnimation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		804536376AA7661B50C176845DB5CD2B /* Comet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comet.swift; path = Comets/Sources/Comet.swift; sourceTree = "<group>"; };
+		81394DB00C440BABC8E222DA922BDA9C /* TweenKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TweenKit-prefix.pch"; sourceTree = "<group>"; };
+		8E23E7C409B36A3B140D63E89DA3320D /* Comets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Comets-Info.plist"; sourceTree = "<group>"; };
+		8EB821DC69E03404FF0628ECA157BB03 /* TweenKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TweenKit; path = TweenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9458315204AD17D3481352207A154040 /* Pods-OpenSourceAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenSourceAnimation-dummy.m"; sourceTree = "<group>"; };
+		9662A622A7CD17686DCEC17D4D385D57 /* ArcAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArcAction.swift; path = TweenKit/TweenKit/ArcAction.swift; sourceTree = "<group>"; };
+		9C50D8C479DDDC3C51CA0DA450543935 /* Pods-OpenSourceAnimation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenSourceAnimation-acknowledgements.plist"; sourceTree = "<group>"; };
+		9CEC95D4A7B9568BC1518EA0242255C9 /* Comets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Comets.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AC79ED017DCA7EDF49DBDF55A728A528 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = TweenKit/TweenKit/Animation.swift; sourceTree = "<group>"; };
+		AE208FD2BD5ACF0B91965E7560B89CDA /* InterpolateAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpolateAction.swift; path = TweenKit/TweenKit/InterpolateAction.swift; sourceTree = "<group>"; };
+		AEFD4C8A881646637AE632D8B12A5241 /* Pods-OpenSourceAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OpenSourceAnimation.modulemap"; sourceTree = "<group>"; };
+		B167278808DF419CD2DE12C1892A6BEB /* Pods-OpenSourceAnimation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenSourceAnimation-frameworks.sh"; sourceTree = "<group>"; };
+		B73D7D24D680AF3EA5DBFAA8BF4981FC /* TweenKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TweenKit-umbrella.h"; sourceTree = "<group>"; };
+		BC604E047A32CB728C27531B0E1E2745 /* TweenKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TweenKit-Info.plist"; sourceTree = "<group>"; };
+		C60EA45C8CA29C85EBD4F1A18ADF87A3 /* Pods-OpenSourceAnimation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenSourceAnimation-Info.plist"; sourceTree = "<group>"; };
+		C84BF66EC0983D33BA1809FB53E74FF1 /* Comets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Comets-dummy.m"; sourceTree = "<group>"; };
+		C8B4A641C51A2F847423AF05AE2B2FB5 /* ReverseAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReverseAction.swift; path = TweenKit/TweenKit/ReverseAction.swift; sourceTree = "<group>"; };
+		CE53F54DE1FFC7945097FBFB313E40EB /* RunBlockAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RunBlockAction.swift; path = TweenKit/TweenKit/RunBlockAction.swift; sourceTree = "<group>"; };
+		D221B02872446A8CF8117175232139A6 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = TweenKit/TweenKit/Math.swift; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D6C3BA89A292C295F8B58040AFAB5E5E /* Comets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Comets.release.xcconfig; sourceTree = "<group>"; };
+		DB813FCCCDED64D1CA3C19E25F437861 /* TweenKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TweenKit.modulemap; sourceTree = "<group>"; };
+		DFA9E19B9AC6CEAA645D3CB608E733DF /* Comets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Comets-umbrella.h"; sourceTree = "<group>"; };
+		E4C8D8B202B4FC52485A90D4B505DDAD /* Comets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Comets.modulemap; sourceTree = "<group>"; };
+		E6231F7CCD9ABF318D41C1AE5E745F09 /* Easing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Easing.swift; path = TweenKit/TweenKit/Easing.swift; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F94181EA88A64D6DA535B779639CF712 /* UIKit+Tweenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Tweenable.swift"; path = "TweenKit/TweenKit/UIKit+Tweenable.swift"; sourceTree = "<group>"; };
+		FD250797B2DA8D0C11D49FFEBE829918 /* TweenKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TweenKit-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09FBBAD80F85B9CF29A2E991F582F50C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634F717AC313ACB87A993302BF66693A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BE8C6F9389C39AA80814B3E05BCF3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2FFF70E460D71C9AA61102674EDACE /* Foundation.framework in Frameworks */,
+				3FB108C2CD218689379E0A86E135B990 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A481A9E9F5D36806AE5235C9F603F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94A384BE148B6BB6463FEDCF36D98E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F88AA6F76B610620792B9B1E6DF373B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2106D2E391B766F728678D6C93ABE467 /* Comets */,
+				33B3DBAF5769B552E0930B54988268B8 /* Pods-OpenSourceAnimation */,
+				8EB821DC69E03404FF0628ECA157BB03 /* TweenKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EB495E20B7184611FB229F26F28F0D9 /* TweenKit */ = {
+			isa = PBXGroup;
+			children = (
+				2F88E309821BC78B50440860092EDB6C /* Action.swift */,
+				0D4D2D8AF6BCE795C267533629F03728 /* ActionGroup.swift */,
+				58688202AF37C770DCF19AD406782798 /* ActionScheduler.swift */,
+				5FFA68CBBB70878994A71FF60BDA7CF8 /* ActionScrubber.swift */,
+				6B0B7BDECEA5B093EA3F959AB96B5EF3 /* ActionSequence.swift */,
+				AC79ED017DCA7EDF49DBDF55A728A528 /* Animation.swift */,
+				9662A622A7CD17686DCEC17D4D385D57 /* ArcAction.swift */,
+				711FD94837D7B0A3133D2C71A20092D1 /* BezierAction.swift */,
+				0BFDBA4947468A8FEE55F37EED2D5C92 /* BezierPath.swift */,
+				6DBD368D972D3CD447397C3E8CF058CA /* CoreGraphics+Tweenable.swift */,
+				7B95A3C55F06C88381ECD32E6CEE84C8 /* DelayAction.swift */,
+				03400B9EEFFCCC8AD4865F54FB5CF93E /* DisplayLink.swift */,
+				E6231F7CCD9ABF318D41C1AE5E745F09 /* Easing.swift */,
+				AE208FD2BD5ACF0B91965E7560B89CDA /* InterpolateAction.swift */,
+				29F7BCFB5E283B3FE34D75B84FC3C6C7 /* Lazy.swift */,
+				D221B02872446A8CF8117175232139A6 /* Math.swift */,
+				35D24F9C61ABB7DC129C7007C3E807A0 /* RepeatAction.swift */,
+				1CD6753843685F9A002DD6836174D693 /* RepeatForeverAction.swift */,
+				C8B4A641C51A2F847423AF05AE2B2FB5 /* ReverseAction.swift */,
+				CE53F54DE1FFC7945097FBFB313E40EB /* RunBlockAction.swift */,
+				68DEA64E53694FF541EBF8E78C80D45C /* Tweenable.swift */,
+				37D1296802919A1230074DF9EBE4BB50 /* UIBezierPath+BezierPath.swift */,
+				F94181EA88A64D6DA535B779639CF712 /* UIKit+Tweenable.swift */,
+				1A1C451CE42CBC8FCE709C34DD25E5C7 /* YoyoAction.swift */,
+				59097EB9C728479DC32BCA0C90924FCB /* Support Files */,
+			);
+			name = TweenKit;
+			path = TweenKit;
+			sourceTree = "<group>";
+		};
+		514E072AA86BCF91AEAD6984C69991C1 /* Pods-OpenSourceAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD4C8A881646637AE632D8B12A5241 /* Pods-OpenSourceAnimation.modulemap */,
+				7BE67DEA0C2E2B9EB467DDB41446EEF9 /* Pods-OpenSourceAnimation-acknowledgements.markdown */,
+				9C50D8C479DDDC3C51CA0DA450543935 /* Pods-OpenSourceAnimation-acknowledgements.plist */,
+				9458315204AD17D3481352207A154040 /* Pods-OpenSourceAnimation-dummy.m */,
+				B167278808DF419CD2DE12C1892A6BEB /* Pods-OpenSourceAnimation-frameworks.sh */,
+				C60EA45C8CA29C85EBD4F1A18ADF87A3 /* Pods-OpenSourceAnimation-Info.plist */,
+				3933C0A8ACEE055912D2114D171223DA /* Pods-OpenSourceAnimation-umbrella.h */,
+				464A2CE7CEC38087C98FC1E6B8342E31 /* Pods-OpenSourceAnimation.debug.xcconfig */,
+				49A17CD0204CCB3528122A89097AF1A2 /* Pods-OpenSourceAnimation.release.xcconfig */,
+			);
+			name = "Pods-OpenSourceAnimation";
+			path = "Target Support Files/Pods-OpenSourceAnimation";
+			sourceTree = "<group>";
+		};
+		59097EB9C728479DC32BCA0C90924FCB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB813FCCCDED64D1CA3C19E25F437861 /* TweenKit.modulemap */,
+				FD250797B2DA8D0C11D49FFEBE829918 /* TweenKit-dummy.m */,
+				BC604E047A32CB728C27531B0E1E2745 /* TweenKit-Info.plist */,
+				81394DB00C440BABC8E222DA922BDA9C /* TweenKit-prefix.pch */,
+				B73D7D24D680AF3EA5DBFAA8BF4981FC /* TweenKit-umbrella.h */,
+				39BC9C206D6B349970B34E3075C4CB2B /* TweenKit.debug.xcconfig */,
+				74F7B8021D23B2755972CC00BC14169E /* TweenKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TweenKit";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7A41FC108C94FA85768A957B4918D1C1 /* Comets */ = {
+			isa = PBXGroup;
+			children = (
+				804536376AA7661B50C176845DB5CD2B /* Comet.swift */,
+				1C5B323F37381737EBBDC35FFF251BFB /* UIImage+Rotate.swift */,
+				9B0B0F241084C03223851B6AF62D211E /* Support Files */,
+			);
+			name = Comets;
+			path = Comets;
+			sourceTree = "<group>";
+		};
+		9B0B0F241084C03223851B6AF62D211E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4C8D8B202B4FC52485A90D4B505DDAD /* Comets.modulemap */,
+				C84BF66EC0983D33BA1809FB53E74FF1 /* Comets-dummy.m */,
+				8E23E7C409B36A3B140D63E89DA3320D /* Comets-Info.plist */,
+				1B9F5F9C1C648F6AE4279BAB5E5DE628 /* Comets-prefix.pch */,
+				DFA9E19B9AC6CEAA645D3CB608E733DF /* Comets-umbrella.h */,
+				9CEC95D4A7B9568BC1518EA0242255C9 /* Comets.debug.xcconfig */,
+				D6C3BA89A292C295F8B58040AFAB5E5E /* Comets.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Comets";
+			sourceTree = "<group>";
+		};
+		9DC0D6F4AB5082A5630A96486B0A91C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A41FC108C94FA85768A957B4918D1C1 /* Comets */,
+				3EB495E20B7184611FB229F26F28F0D9 /* TweenKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				9DC0D6F4AB5082A5630A96486B0A91C8 /* Pods */,
+				0F88AA6F76B610620792B9B1E6DF373B /* Products */,
+				E1E0211275DB472547B49FC3FE3C6A12 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E1E0211275DB472547B49FC3FE3C6A12 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				514E072AA86BCF91AEAD6984C69991C1 /* Pods-OpenSourceAnimation */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09973F07BC4FCD47D2C2D81EF71B962C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC168E3848D90E8F44163F7B7DEED7B /* Comets-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C87FE6FEFC330F3A07164CCA6B1C193 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3A01B795D0910B2FA37A51F10D660F /* TweenKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEAE0C1ADD11D439C8FC6B8859B5AEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12B9A0FA5EA50D9BAB3C37BFAEF2042 /* Pods-OpenSourceAnimation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		125B6FEA16CD0511AAB23164F8FDFACD /* Comets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 334EB956E60D63C2B837438D5E83192C /* Build configuration list for PBXNativeTarget "Comets" */;
+			buildPhases = (
+				09973F07BC4FCD47D2C2D81EF71B962C /* Headers */,
+				C77098212BDC811CE610B0B538EF318F /* Sources */,
+				09FBBAD80F85B9CF29A2E991F582F50C /* Frameworks */,
+				EFAEC3236712A58CF908E55EE3D574E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Comets;
+			productName = Comets;
+			productReference = 2106D2E391B766F728678D6C93ABE467 /* Comets */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4BD4A165F77386C7C44BC76339DCBAC /* TweenKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2883E1BF894629E45CD5EC3E77DF14AB /* Build configuration list for PBXNativeTarget "TweenKit" */;
+			buildPhases = (
+				4C87FE6FEFC330F3A07164CCA6B1C193 /* Headers */,
+				8ADD9276F8AE88D8429F0930892C31CB /* Sources */,
+				14BE8C6F9389C39AA80814B3E05BCF3A /* Frameworks */,
+				D878B93B77D21FCA61689B1FF5D5BE5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweenKit;
+			productName = TweenKit;
+			productReference = 8EB821DC69E03404FF0628ECA157BB03 /* TweenKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB4AB904E7C47E5E8097E52EB234EC37 /* Pods-OpenSourceAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFBD0EBCA5F0E66312EF67477D46D2C7 /* Build configuration list for PBXNativeTarget "Pods-OpenSourceAnimation" */;
+			buildPhases = (
+				AEEAE0C1ADD11D439C8FC6B8859B5AEC /* Headers */,
+				EA55868EF7D4ACE97ED6906972340A7E /* Sources */,
+				D7A481A9E9F5D36806AE5235C9F603F9 /* Frameworks */,
+				4C2A1A84DDE62EFF986CB733690D152D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EE80D27665B1E34F1E5D354E0609401 /* PBXTargetDependency */,
+				EF843F5F4D2EEF8C47FB4AF6D58E3A00 /* PBXTargetDependency */,
+			);
+			name = "Pods-OpenSourceAnimation";
+			productName = Pods_OpenSourceAnimation;
+			productReference = 33B3DBAF5769B552E0930B54988268B8 /* Pods-OpenSourceAnimation */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0F88AA6F76B610620792B9B1E6DF373B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				125B6FEA16CD0511AAB23164F8FDFACD /* Comets */,
+				EB4AB904E7C47E5E8097E52EB234EC37 /* Pods-OpenSourceAnimation */,
+				E4BD4A165F77386C7C44BC76339DCBAC /* TweenKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C2A1A84DDE62EFF986CB733690D152D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D878B93B77D21FCA61689B1FF5D5BE5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFAEC3236712A58CF908E55EE3D574E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ADD9276F8AE88D8429F0930892C31CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B9C1DDD18273C57C846AF89C7B155D /* Action.swift in Sources */,
+				63F40D465E1C6D6DA522BF5C4A605580 /* ActionGroup.swift in Sources */,
+				E04B3A8590D38FC668C362D7B01D12B5 /* ActionScheduler.swift in Sources */,
+				FCD367AE57714E6A740DCD6CDE37544C /* ActionScrubber.swift in Sources */,
+				323B74CF15CBE6F0B08AEEF6C3746657 /* ActionSequence.swift in Sources */,
+				414D10F39C2B8A54A83E1FD88E6A9475 /* Animation.swift in Sources */,
+				F440C89EFEEDD8AA346478162818D78E /* ArcAction.swift in Sources */,
+				A4CD0227435ABEDEC559434E5663E241 /* BezierAction.swift in Sources */,
+				CD2B76B5B1B2FA1D5A90159AFC6F85E8 /* BezierPath.swift in Sources */,
+				D4219527F2BAFBAE1B9A090E9D3A3954 /* CoreGraphics+Tweenable.swift in Sources */,
+				FEA90061160257A3362C637C2EE4481D /* DelayAction.swift in Sources */,
+				D601F22220D3A2CFD41052C09F3649AD /* DisplayLink.swift in Sources */,
+				67AF6B402C1CBB7A558D46468505B892 /* Easing.swift in Sources */,
+				F34F8AC348B5CA9577C352A0914F7F04 /* InterpolateAction.swift in Sources */,
+				A82DD004E9F4A14E1D9AAC5C3F42643B /* Lazy.swift in Sources */,
+				2E0FCA56B58C1EACCC17AFBC1A2E833B /* Math.swift in Sources */,
+				98D8206E55448DAF1B93365A14AC3B72 /* RepeatAction.swift in Sources */,
+				6F03DB5410D1C26C8EF8D5176AB39260 /* RepeatForeverAction.swift in Sources */,
+				09EC8718EE44ACFE5E64ADB5C9EF2364 /* ReverseAction.swift in Sources */,
+				CA07E9B805827BBC5FDD258A5C360449 /* RunBlockAction.swift in Sources */,
+				4CDACE02B0F3FEC16D904F82FE947200 /* Tweenable.swift in Sources */,
+				1912A16E53C5367F5C0A5269B013192F /* TweenKit-dummy.m in Sources */,
+				D45966BD5EE6B3F432C9A391C525B836 /* UIBezierPath+BezierPath.swift in Sources */,
+				A31021BDB561E155705DCD509620C2B3 /* UIKit+Tweenable.swift in Sources */,
+				9852F7A87B55195141ED0747DC20DD66 /* YoyoAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77098212BDC811CE610B0B538EF318F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8369F69B29DA2962CF1C66BAD4121AFE /* Comet.swift in Sources */,
+				50AD782C9DBEFF306AA540640578A164 /* Comets-dummy.m in Sources */,
+				BBE021954F4C92D6A099D3FABA347C93 /* UIImage+Rotate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA55868EF7D4ACE97ED6906972340A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359DEB02CA702ABEE6B3217E74151A03 /* Pods-OpenSourceAnimation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EE80D27665B1E34F1E5D354E0609401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Comets;
+			target = 125B6FEA16CD0511AAB23164F8FDFACD /* Comets */;
+			targetProxy = B1A81B4698FBEE4C856EAAEAD0228696 /* PBXContainerItemProxy */;
+		};
+		EF843F5F4D2EEF8C47FB4AF6D58E3A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TweenKit;
+			target = E4BD4A165F77386C7C44BC76339DCBAC /* TweenKit */;
+			targetProxy = 1724BEA0F264E72C24C61C56FE9599C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3614C4B452F0FC3886850574DAFFF875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 464A2CE7CEC38087C98FC1E6B8342E31 /* Pods-OpenSourceAnimation.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenSourceAnimation/Pods-OpenSourceAnimation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenSourceAnimation/Pods-OpenSourceAnimation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B7179F88563DFA796270E0870645C08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A17CD0204CCB3528122A89097AF1A2 /* Pods-OpenSourceAnimation.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenSourceAnimation/Pods-OpenSourceAnimation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenSourceAnimation/Pods-OpenSourceAnimation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59CAF21E8D855B0E2E593B4BC744B04F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39BC9C206D6B349970B34E3075C4CB2B /* TweenKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TweenKit/TweenKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TweenKit/TweenKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TweenKit/TweenKit.modulemap";
+				PRODUCT_MODULE_NAME = TweenKit;
+				PRODUCT_NAME = TweenKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7231F95CA7472DA44A4FA75C004676B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C3BA89A292C295F8B58040AFAB5E5E /* Comets.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Comets/Comets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Comets/Comets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Comets/Comets.modulemap";
+				PRODUCT_MODULE_NAME = Comets;
+				PRODUCT_NAME = Comets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B68B0D889B5C31FF3B01B14419BC858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F7B8021D23B2755972CC00BC14169E /* TweenKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TweenKit/TweenKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TweenKit/TweenKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TweenKit/TweenKit.modulemap";
+				PRODUCT_MODULE_NAME = TweenKit;
+				PRODUCT_NAME = TweenKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E5DFA68BFDE991E4BC152FCC788432C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CEC95D4A7B9568BC1518EA0242255C9 /* Comets.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Comets/Comets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Comets/Comets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Comets/Comets.modulemap";
+				PRODUCT_MODULE_NAME = Comets;
+				PRODUCT_NAME = Comets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2883E1BF894629E45CD5EC3E77DF14AB /* Build configuration list for PBXNativeTarget "TweenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CAF21E8D855B0E2E593B4BC744B04F /* Debug */,
+				7B68B0D889B5C31FF3B01B14419BC858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		334EB956E60D63C2B837438D5E83192C /* Build configuration list for PBXNativeTarget "Comets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5DFA68BFDE991E4BC152FCC788432C2 /* Debug */,
+				7231F95CA7472DA44A4FA75C004676B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFBD0EBCA5F0E66312EF67477D46D2C7 /* Build configuration list for PBXNativeTarget "Pods-OpenSourceAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3614C4B452F0FC3886850574DAFFF875 /* Debug */,
+				3B7179F88563DFA796270E0870645C08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

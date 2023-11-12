@@ -1,0 +1,20 @@
+PODS:
+  - Comets (0.3.1)
+  - TweenKit (1.0.3)
+
+DEPENDENCIES:
+  - Comets
+  - TweenKit
+
+SPEC REPOS:
+  trunk:
+    - Comets
+    - TweenKit
+
+SPEC CHECKSUMS:
+  Comets: ff75eb4658d612af66073bf9fcf6e8bef274817b
+  TweenKit: 7f32dbdda44609be0cfb3fe853af9562cd1e3564
+
+PODFILE CHECKSUM: ad2a40ac845f019fe95c149afac032050b5b0a3b
+
+COCOAPODS: 1.11.3
