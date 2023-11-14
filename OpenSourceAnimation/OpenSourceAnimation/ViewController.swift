@@ -22,6 +22,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var a:Int
+        
+        
         
         let fromRect = CGRect(x: 0, y: 0, width: 0, height: 0)
         let screenBounds = UIScreen.main.bounds
@@ -31,10 +34,12 @@ class ViewController: UIViewController {
         let action = InterpolationAction(
             from: fromRect,
             to: toRect,
-            duration: 1.0,
+            duration: 3.0,
             easing: .exponentialInOut) {
                 [unowned self] in self.blueView.frame = $0
             }
+        
+        sleep(3)
         
         scheduler.run(action: action)
         

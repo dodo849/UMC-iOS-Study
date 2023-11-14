@@ -23,6 +23,7 @@ class DetailViewController: BaseViewController {
         let tapGestureM = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         priceMRadio.addGestureRecognizer(tapGestureM)
         priceMRadio.isUserInteractionEnabled = true
+        priceLRadio.addGestureRecognizer(tapGestureM)
         
         let tapGestureL = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         priceLRadio.addGestureRecognizer(tapGestureL)
