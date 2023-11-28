@@ -50,3 +50,9 @@ extension AppDelegate {
     }
 }
 
+
+struct Response: Codable{
+    let success: Bool
+    let result: String
+    let message: String
+}
